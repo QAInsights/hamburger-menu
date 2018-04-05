@@ -1,0 +1,101 @@
+body {
+  font-family: sans-serif; }
+
+header {
+  width: 100%; }
+
+.top-bar {
+  background: #3a3a3a;
+  border-top-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px; }
+  .top-bar ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-top: 20px; }
+    .top-bar ul li, .top-bar ul li a {
+      color: white;
+      display: inline-block;
+      padding: 0 5px; }
+
+.nav-bar {
+  background-color: white;
+  border-bottom-color: #ccc;
+  margin: 0 10px; }
+  .nav-bar .menu {
+    display: inline-block;
+    float: right; }
+    .nav-bar .menu ul {
+      list-style: none;
+      padding-left: 0; }
+      .nav-bar .menu ul li {
+        display: inline;
+        padding: 0 5px;
+        position: relative; }
+        .nav-bar .menu ul li:hover ul {
+          display: block !important;
+          width: 100%; }
+        .nav-bar .menu ul li ul.subtabs {
+          position: absolute;
+          display: none;
+          right: 0;
+          top: 100%;
+          padding-top: 10px;
+          margin-left: 0;
+          margin-right: 0;
+          z-index: 1;
+          background-color: whitesmoke; }
+          .nav-bar .menu ul li ul.subtabs li {
+            display: block; }
+          .nav-bar .menu ul li ul.subtabs li:first-child a {
+            border-top: 2px solid #2aafea; }
+          .nav-bar .menu ul li ul.subtabs a {
+            font-size: 12px;
+            color: #777;
+            text-decoration: none;
+            background-color: whitesmoke; }
+        .nav-bar .menu ul li a {
+          text-decoration: none;
+          background-color: #2aafea;
+          color: white;
+          padding: 6px 8px;
+          font-size: 14px;
+          display: inline-block; }
+          .nav-bar .menu ul li a:hover {
+            background-color: red; }
+    .nav-bar .menu .hamburger-btn {
+      display: none; }
+  .nav-bar .logo {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    display: inline-block;
+    line-height: 3; }
+  @media screen and (max-width: 600px) {
+    .nav-bar .logo {
+      line-height: 3; }
+    .nav-bar .menu {
+      display: inline-block;
+      float: none; }
+      .nav-bar .menu.hamburger-menu {
+        float: right; }
+      .nav-bar .menu ul {
+        display: none; }
+        .nav-bar .menu ul li {
+          display: block; }
+          .nav-bar .menu ul li a {
+            display: block;
+            margin-bottom: 2px; }
+      .nav-bar .menu .hamburger-btn {
+        display: inline-block; }
+      .nav-bar .menu.responsive {
+        display: block; }
+        .nav-bar .menu.responsive ul {
+          display: block;
+          margin-top: 0; } }
+
+/*# sourceMappingURL=index.css.map */
